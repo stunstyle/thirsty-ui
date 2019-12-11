@@ -1,20 +1,6 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 import './App.css';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
 
 function App() {
   return (

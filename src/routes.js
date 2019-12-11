@@ -29,7 +29,7 @@ export default function BasicExample() {
           you have multiple routes, but you want only one
           of them to render at a time
         */}
-            <div class="container">
+            <div>
                 <Switch>
                     <Route exact path="/">
                         <Home />
