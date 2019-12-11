@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/thirsty-ui/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/thirsty-ui/static/js/main.97feb3f3.chunk.js",
+    "main.js.map": "/thirsty-ui/static/js/main.97feb3f3.chunk.js.map",
+    "runtime-main.js": "/thirsty-ui/static/js/runtime-main.66876160.js",
+    "runtime-main.js.map": "/thirsty-ui/static/js/runtime-main.66876160.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/thirsty-ui/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.97df5c14.chunk.js": "/thirsty-ui/static/js/2.97df5c14.chunk.js",
+    "static/js/2.97df5c14.chunk.js.map": "/thirsty-ui/static/js/2.97df5c14.chunk.js.map",
+    "index.html": "/thirsty-ui/index.html",
+    "precache-manifest.95327b4673e1b3cd8bb58864d65f074c.js": "/thirsty-ui/precache-manifest.95327b4673e1b3cd8bb58864d65f074c.js",
+    "service-worker.js": "/thirsty-ui/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/thirsty-ui/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/thirsty-ui/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.97df5c14.chunk.js.LICENSE": "/thirsty-ui/static/js/2.97df5c14.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66876160.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.97df5c14.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.97feb3f3.chunk.js"
+  ]
+}
