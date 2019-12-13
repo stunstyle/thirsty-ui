@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import About from './components/About';
+import CocktailTable from './components/CocktailTable';
 
 
 // This site has 3 pages, all of which are rendered
@@ -42,6 +43,9 @@ export default function BasicExample() {
                     </Route>
                     <Route path="/about">
                         <About />
+                    </Route>
+                    <Route path="/all">
+                        <CocktailTable/>
                     </Route>
                 </Switch>
             </div>
