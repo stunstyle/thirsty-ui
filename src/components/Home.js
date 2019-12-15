@@ -10,7 +10,7 @@ function Home() {
             <Row className="justify-content-center">
                 <Col xs="3"></Col>
                 <Col xs="3">
-                    <h1>Cocktails</h1>
+                    {/* <h1>Cocktails</h1> */}
                 </Col>
                 <Col xs="3"></Col>
             </Row>

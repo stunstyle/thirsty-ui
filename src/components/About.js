@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
     return(
-        <div>kur</div>
+        <div>generic about info</div>
     );
 }
 export default About;

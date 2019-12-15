@@ -1,6 +1,9 @@
 import React from 'react';
 import { Table, Col, Button, Row, Container, ButtonGroup } from 'reactstrap';
 import { Link } from 'react-router-dom';
+// Import React Table
+
+
 
 
 class CocktailTable extends React.Component {
@@ -8,7 +11,6 @@ class CocktailTable extends React.Component {
     super(props);
     this.state = {
       error: null,
-      isLoaded: false,
       items: []
     };
   }
@@ -19,16 +21,15 @@ class CocktailTable extends React.Component {
       .then(
         (result) => {
           this.setState({
-            isLoaded: true,
-            items: result.drinks
+            items: result.drinks,
           });
+          console.log(result.drinks);
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
         // exceptions from actual bugs in components.
         (error) => {
           this.setState({
-            isLoaded: true,
             error
           });
         }
@@ -39,9 +40,17 @@ class CocktailTable extends React.Component {
     const { error, isLoaded, items } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
+    } else if (null == items) {
       return <div>Loading...</div>;
     } else {
+      // const ReactTable = require('react-table').default;
+      const columns = [{
+        Header: 'Name',
+        accessor: 'name'
+      },{
+        Header: 'Age',
+        accessor: 'age'
+      }]
       return (
         <Container className="container-fluid">
           <Row className="justify-content-center">
@@ -60,13 +69,9 @@ class CocktailTable extends React.Component {
               </ButtonGroup>
             </Col>
             <Col xs="4">
+              {/* <ReactTable data={items} columns={columns}
+              /> */}
               <Table>
-                {/* <thead>
-                  <tr>
-                    <th>Cocktail name</th>
-                    <th>Image</th>
-                  </tr>
-                </thead> */}
                 <tbody>
                   {items.map(item => (
                     <tr>
